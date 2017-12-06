@@ -13,6 +13,7 @@ import { ArchivedTodosPage } from "../archived-todos/archived-todos";
 export class HomePage {
   public todos = [];
   public reorderIsEnabled = false;
+  // public ArchivedTodosPage = ArchivedTodosPage;
 
   constructor(private todoProvider: TodoProvider, public navCtrl: NavController, private alertController: AlertController) {
     this.todos = this.todoProvider.getToDos();
