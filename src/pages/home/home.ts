@@ -19,6 +19,10 @@ export class HomePage {
     this.todos = this.todoProvider.getToDos();
   }
 
+  archivedTodo(todoIndex) {
+    this.todoProvider.archivedTodo(todoIndex);
+  }
+
   goToArchivePage() {
     this.navCtrl.push(ArchivedTodosPage);
   }
