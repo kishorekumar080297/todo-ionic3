@@ -21,7 +21,7 @@
 
 <ion-content padding>
 
-  <ion-list [reorder] = "reorderIsEnabled">
+  <ion-list [reorder] = "reorderIsEnabled" (ionItemReorder) = "itemReordered($event)">
     <ion-item-sliding *ngFor = "let todo of todos">
       <ion-item>{{todo}}</ion-item>
 
