@@ -1,14 +1,25 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      ToDo
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>Todo 1</ion-item>
+
+        <ion-item-options side="right">
+          <button color="danger" ion-button>
+            <ion-icon name="trash"></ion-icon>
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+
+    <ion-item>Todo 2</ion-item>
+    <ion-item>Todo 3</ion-item>
+  </ion-list>
 </ion-content>
