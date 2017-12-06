@@ -68,12 +68,48 @@ export class HomePage {
               });
               addTodoToast.present();
             });
-            
+
           }
         }
       ]
     });
     addTodoAlert.present();
+  }
+
+  editTodo(todoIndex) {
+    let editTodoAlert = this.alertController.create({
+      title: "Edit A Todo",
+      message: "Edit Your Todo",
+      inputs: [
+        {
+          type: "text",
+          name: "editTodoInput",
+          value: this.todos[todoIndex]
+        }
+      ],
+      buttons: [
+        {
+          text: "cancel"
+        },
+        {
+          text: "Edit Todo",
+          handler: (inputData)=> {
+            let todoText;
+            todoText = inputData.editTodoInput;
+            this.todoProvider.editTodo(todoText, todoIndex);
+
+            editTodoAlert.onDidDismiss(()=> {
+              let editTodoToast = this.toastController.create({
+                message: "Todo Edited",
+                duration: 2000,
+              });
+              editTodoToast.present();
+            });
+          }
+        }
+      ]
+    });
+    editTodoAlert.present();
   }
 
 }

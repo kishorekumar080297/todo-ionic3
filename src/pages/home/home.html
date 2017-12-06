@@ -25,6 +25,12 @@
     <ion-item-sliding *ngFor = "let todo of todos; let todoIndex = index">
       <ion-item>{{todo}}</ion-item>
 
+      <ion-item-options side = "left">
+        <button color = "secondary" ion-button (click)="editTodo(todoIndex)">
+          <ion-icon name = "create"></ion-icon>
+        </button>
+      </ion-item-options>
+
         <ion-item-options side = "right">
           <button color = "danger" ion-button (click)="archivedTodo(todoIndex)">
             <ion-icon name = "trash"></ion-icon>
