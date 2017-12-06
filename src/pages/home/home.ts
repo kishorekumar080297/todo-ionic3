@@ -6,6 +6,7 @@ import { NavController, AlertController } from 'ionic-angular';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  public todos = [];
 
   constructor(public navCtrl: NavController, private alertController: AlertController) {
 
@@ -26,7 +27,12 @@ export class HomePage {
           text: "Cancel"
         },
         {
-          text: "Add ToDo"
+          text: "Add ToDo",
+          handler: (inputData)=> {
+            let todoText;
+            todoText = inputData.addTodoInput;
+            this.todos.push(todoText);
+          }
         }
       ]
     });

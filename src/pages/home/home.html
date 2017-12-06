@@ -14,8 +14,8 @@
 <ion-content padding>
 
   <ion-list>
-    <ion-item-sliding>
-      <ion-item>Todo 1</ion-item>
+    <ion-item-sliding *ngFor="let todo of todos">
+      <ion-item>{{todo}}</ion-item>
 
         <ion-item-options side="right">
           <button color="danger" ion-button>
@@ -24,9 +24,5 @@
         </ion-item-options>
 
       </ion-item-sliding>
-
-    <ion-item>Todo 2</ion-item>
-
-    <ion-item>Todo 3</ion-item>
   </ion-list>
 </ion-content>
