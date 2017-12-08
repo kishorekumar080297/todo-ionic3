@@ -1,8 +1,8 @@
 {
   "name": "todo",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "author": "Kishore Kumar Govindaradjou",
+  "homepage": "https://kishore-kumar.herokuapp.com",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
