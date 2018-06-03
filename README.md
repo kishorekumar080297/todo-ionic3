@@ -1,17 +1,34 @@
-# Todo Ionic3
-A Todo list app made with ionic 3 and angular 4
+# Todo Android app
 
-## Install cordova and ionic
-```bash
+A todo list Android app developed using Ionic 3.
+
+## Prerequisites ##
+
+Install Node.js
+
+Install Cordova & Ionic,
+
+```
 $ npm install -g cordova ionic
 ```
 
-## Usage
-```bash
-$ cd todo-ionic3
+Install npm packages
+
+```
 $ npm install
+```
+
+Run through Browser
+
+```
 $ ionic serve
 ```
 
-## License
-Copyright (c) 2017 Kishore Kumar <kishorekumar080297@gmail.com>  
+To run on a device, connect the device and enable adb
+
+```
+$ ionic run android
+```
+
+## License ##
+Copyright (c) 2018 Kishore Kumar <kishorekumar080297@gmail.com>  
